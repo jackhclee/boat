@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  key1: config1
+  {{- if .Values.render }}
+  key2: hello
+  {{- end }}
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: abc
